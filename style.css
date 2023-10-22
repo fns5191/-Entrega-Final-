@@ -1,0 +1,91 @@
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-image: url(./assets/platica.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: black;
+  }
+  
+  p {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+  }
+
+  .boton {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/cambio.jpg);
+    background-size: contain;
+    background-position: center;
+    padding: 55px;
+    border-radius: 50%;
+  }
+  
+  .moneda {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .moneda select {
+    padding: 10px 20px 10px 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #020202;
+    font-size: 16px;
+  }
+  
+  .moneda input {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+  }
+  
+  .cambio-divisa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .rate {
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 0 3px;
+  }
+  
+  select:focus,
+  input:focus,
+  button:focus {
+    outline: 0;
+  }

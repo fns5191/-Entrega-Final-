@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Conversor de Monedas</title>
+    <link rel="shortcut icon" href="./assets/cambio.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="centro">
+    <h1>Calculadora de Cambio</h1>
+    <p>Selecciona el monto que quieres convertir</p>
+    <div class="container">
+    <div class="moneda">
+        <select id="primera-moneda">
+          <option value="ARS" selected>ARS</option>
+          <option value="EUR">EUR</option>
+          <option value="USD">USD</option>
+        </select>
+        <input type="number" id="cantidad-uno" placeholder="0" value="1" />
+      </div>
+
+      <div class="cambio-divisa">
+        <button class="boton" id="rotar-valores">Rotar</button>
+        <div class="rate" id="rate"></div>
+      </div>
+
+      <div class="moneda">
+        <select id="segunda-moneda">
+          <option value="ARS">ARS</option>
+          <option value="EUR">EUR</option>
+          <option value="USD" selected>USD</option>
+        </select>
+        <input type="number" id="cantidad-dos" placeholder="0" />
+      </div>
+    </div>
+  </section>
+    <script src="script.js"></script>
+  </body>
+</html>
