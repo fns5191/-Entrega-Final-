@@ -5,7 +5,7 @@ const segundaDivisa = document.getElementById('segunda-moneda');
 const primeraCantidad = document.getElementById('cantidad-uno');
 const segundaCantidad = document.getElementById('cantidad-dos');
 
-const rateEl = document.getElementById('rate');
+const tasa = document.getElementById('rate');
 
 const rotarValores = document.getElementById('rotar-valores');
 
@@ -18,13 +18,12 @@ fetch(`https://v6.exchangerate-api.com/v6/b71ba5a6f69833fe3ac900ec/latest/${prim
     .then((data) => {
     
     const rate = data.conversion_rates[segunda_divisa];
-    rateEl.innerText = `1 ${primera_divisa} = ${rate} ${segunda_divisa}`;
+    tasa.innerText = `1 ${primera_divisa} = ${rate} ${segunda_divisa}`;
 
     segundaCantidad.value = (primeraCantidad.value * rate).toFixed(2);
     });
 }
 
-/* Para poder hacer el cálculo de la conversión me guié con un ejemplo que encontré */
 
 primeraDivisa.addEventListener('change', calculate);
 primeraCantidad.addEventListener('input', calculate);
